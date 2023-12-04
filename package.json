@@ -7,7 +7,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "clean": "rm -R ./dist/*",
+    "clear": "rm -R ./dist/*",
     "build": "npm run clear && tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm run publish"
   },
