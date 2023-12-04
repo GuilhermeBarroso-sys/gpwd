@@ -1,0 +1,21 @@
+{
+  "name": "@gbarrosodev/gpwd",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist.index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "clean": "rm -R ./dist/*",
+    "build": "npm run clear && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm run publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0"
+  }
+}
